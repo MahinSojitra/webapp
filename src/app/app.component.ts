@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'webapp';
+  loading = true;
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 3000);
+  }
 }

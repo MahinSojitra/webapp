@@ -1,4 +1,11 @@
-<app-navbar></app-navbar>
-<div class="container mt-3">
-  <router-outlet></router-outlet>
-</div>
+<!-- Splash Screen -->
+<app-splash *ngIf="loading"></app-splash>
+
+<!-- Main Content -->
+<ng-container *ngIf="!loading">
+  <app-navbar></app-navbar>
+
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+  </div>
+</ng-container>

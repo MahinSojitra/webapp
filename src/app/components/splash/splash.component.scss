@@ -1,0 +1,68 @@
+.animate-bounce {
+  animation: bounce 1.2s infinite;
+}
+
+.animate-pulse {
+  animation: pulse 1.2s infinite;
+}
+
+.animate-zoom {
+  animation: zoomInOut 1.2s infinite;
+}
+
+.animate-rotate {
+  animation: rotateIn 1.2s linear infinite;
+}
+
+.animate-fade {
+  animation: fadeInOut 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
