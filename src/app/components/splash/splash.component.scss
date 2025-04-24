@@ -1,68 +1,32 @@
-.animate-bounce {
-  animation: bounce 1.2s infinite;
+#outline {
+  stroke-dasharray: 2.42777px, 242.77666px;
+  stroke-dashoffset: 0;
+  animation: anim 1.6s linear infinite;
 }
 
-.animate-pulse {
-  animation: pulse 1.2s infinite;
-}
-
-.animate-zoom {
-  animation: zoomInOut 1.2s infinite;
-}
-
-.animate-rotate {
-  animation: rotateIn 1.2s linear infinite;
-}
-
-.animate-fade {
-  animation: fadeInOut 1.5s ease-in-out infinite;
-}
-
-@keyframes bounce {
-  0%,
+@keyframes anim {
+  12.5% {
+    stroke-dasharray: 33.98873px, 242.77666px;
+    stroke-dashoffset: -26.70543px;
+  }
+  43.75% {
+    stroke-dasharray: 84.97183px, 242.77666px;
+    stroke-dashoffset: -84.97183px;
+  }
   100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
+    stroke-dasharray: 2.42777px, 242.77666px;
+    stroke-dashoffset: -240.34889px;
   }
 }
 
-@keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-
-@keyframes zoomInOut {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-}
-
-@keyframes rotateIn {
+@keyframes flicker {
   0% {
-    transform: rotate(0);
+    opacity: 0.2;
   }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fadeInOut {
-  0%,
-  100% {
+  50% {
     opacity: 1;
   }
-  50% {
-    opacity: 0.3;
+  100% {
+    opacity: 0.6;
   }
 }

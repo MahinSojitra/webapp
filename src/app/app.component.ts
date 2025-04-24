@@ -12,6 +12,6 @@ export class AppComponent {
   ngOnInit() {
     setTimeout(() => {
       this.loading = false;
-    }, 3000);
+    }, 2500);
   }
 }
