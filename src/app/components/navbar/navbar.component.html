@@ -12,11 +12,19 @@
         Home
       </a>
 
-      <!-- About Link -->
       <a routerLink="/about" routerLinkActive="active" [ngClass]="{ 'text-success': true }"
         class="nav-link d-flex align-items-center gap-1" #aboutRouterLinkActive="routerLinkActive">
         <i [ngClass]="aboutRouterLinkActive.isActive ? 'bi bi-info-circle-fill' : 'bi bi-info-circle'"></i>
         About
+      </a>
+
+      <a routerLink="/drag-drop-columns" routerLinkActive="active" [ngClass]="{ 'text-success': true }"
+        class="nav-link d-flex align-items-center gap-1" #columnsRouterLinkActive="routerLinkActive">
+
+        <i [ngClass]="columnsRouterLinkActive.isActive
+            ? 'bi bi-grip-vertical'
+            : 'bi bi-layout-three-columns'"></i>
+        Columns
       </a>
     </div>
 

@@ -1,0 +1,28 @@
+// Variables
+$bg-container: #f9f9f9;
+$border-color: #ddd;
+$column-bg: #e0f7fa;
+$column-border: #26c6da;
+
+// Styles
+.column-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: $bg-container;
+  border: 1px solid $border-color;
+  margin-top: 2rem;
+  overflow-x: auto;
+
+  .column {
+    padding: 1rem 2rem;
+    background-color: $column-bg;
+    border: 1px solid $column-border;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    cursor: move;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}

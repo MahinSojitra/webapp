@@ -7,6 +7,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { SplashComponent } from './components/splash/splash.component';
+import { DragDropColumnsComponent } from './components/drag-drop-columns/drag-drop-columns.component';
+import { CommonModule } from '@angular/common';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { SplashComponent } from './components/splash/splash.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    SplashComponent
+    SplashComponent,
+    DragDropColumnsComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
