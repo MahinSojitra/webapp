@@ -3,7 +3,7 @@
 
 <!-- Main Content -->
 <ng-container *ngIf="!loading">
-  <app-navbar></app-navbar>
+  <app-navbar (changeParentEvent)="changeColor()" [title]="titleData"></app-navbar>
 
   <div class="container mt-3">
     <router-outlet></router-outlet>

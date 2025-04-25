@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,7 +7,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  title: string = 'WebApp';
+  @Input() title: string = "";
+  @Output() changeParentEvent = new EventEmitter();
 
   constructor(public router: Router) {}
+
+  changeParent() {
+    this.changeParentEvent.emit();
+  }
 }

@@ -10,6 +10,7 @@ import { SplashComponent } from './components/splash/splash.component';
 import { DragDropColumnsComponent } from './components/drag-drop-columns/drag-drop-columns.component';
 import { CommonModule } from '@angular/common';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { FormsModule, NgModel } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     CommonModule,
     BrowserModule,
     AppRoutingModule,
-    DragDropModule
+    DragDropModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
